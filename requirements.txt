@@ -25,3 +25,4 @@ Werkzeug==3.0.1
 yarl==1.9.4
 zipp==3.17.0
 Gunicorn
+flask-cors==4.0.0

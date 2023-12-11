@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS, cross_origin
 import cohere
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app, support_credentials=True)
 
 # Replace 'YOUR_COHERE_API_KEY' with your Cohere API key
 
